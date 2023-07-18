@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Weather App Project</title>
+
+    <link rel="icon" href="./weather-forecast.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js" defer></script>
+
+  </head>
+  
+  
+  
+  
+  
+  <body>
+  
+    <h1>
+      <a href="./index.html"><img src="./weather-logo.png" alt="weather-logo" class="logo"/></a>
+      
+      <small class="title">Dashboard</small>
+  
+      <button onclick="darkMode()" ondblclick = "lightMode()" id="mybutton">Darkmode</button>
+      
+    </h1>
+
+    <div class="container">
+  
+      <div class="weather-input">
+  
+        <h3>Enter a City Name</h3>
+  
+        <input class="city-input" id="city" type="text" >
+        
+        <button class="search-btn" onclick="link()">Search</button>
+        
+        <div class="separator"></div>
+
+        <button class="location-btn" onclick="locationlink()">Use Current Location</button>
+
+        
+      </div>
+
+
+      <div class="weather-data" style="display: none;" id="wd">
+
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        
+        <div class="days-forecast">
+        
+          <h2 class="fourday">4-Day Forecast</h2>
+        
+        
+          <ul class="weather-cards">
+        
+        
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+        
+        
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+        
+        
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+        
+        
+       </ul>
+        
+        </div>
+        
+    </div>    
+  
+    </div>  
+  
+  </body>
+
+</html>
